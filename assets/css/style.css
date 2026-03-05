@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/A7409511.jpg);
+
+    /* Position the image */
+    background-position: center center; 
+    
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat; 
+    
+    /* This is the crucial line: it fixes the background in place */
+    background-attachment: fixed; 
+    
+    /* Scale the background image to be as large as possible so that the background area is completely covered by the background image (no white space) */
+    background-size: cover; 
+    
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif, serif; /* A font stack */
+}
+
+
+header {
+  display: block;
+  font-style: normal;
+  color: aliceblue;
+  font-family: "Special Elite", system-ui;
+  font-size: xx-large;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 5%;
+  
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.name-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    
+}
+
+.portals {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-content: space-between;
+    margin-bottom: 10%;
+}
+
+.portals div {
+    
+    width: 46%;
+    margin: 2%;
+    
+    
+
+}
+
+.portal-button {
+    font-family: "Special Elite", system-ui;
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    background-color: #bb2727; /* Button background color */
+    background-size: 100%;
+    color: white; /* Text and icon color */
+    text-decoration: none; /* Removes default underline from links */
+    font-weight: bold; /* Makes text bold */
+    font-size: 5rem;
+    transition: background-color 0.3s; /* Smooth hover effect */
+    cursor: pointer; /* Ensures it looks clickable */
+    border-style: groove;
+    width: 100%;
+    padding: 5%;
+    
+    
+    
+}
+
+
+.empty-space {
+    height: 10rem;
+}
+
+
+
+/* LOGO AND GRAPHIC */
+
+.fixed-image {
+    position: fixed;
+    z-index: 1000; /* High value to stay above all other elements */
+    max-width: 100%;
+}
+
+#img1 {
+    bottom: 2%; /* Distance from bottom of screen */
+    right: 2%; /* Distance from right of screen */
+    width: auto;
+    height: 12%;
+}
+
+#img2 {
+    top: 0%;
+    left: 0%;
+    width: auto;
+    height: 15%;
+   
+}
+
+#img3 {
+    width: 85%;
+    top: 0%;
+    margin-left: 8%;   
+    position: absolute;
+    z-index: 999;
+}
+
+#img4 {
+    width: 100%;
+    top: 2%;
+    margin-left: 0%;   
+    position: absolute;
+    z-index: 99;
+
+}
+
+#img5 {
+    width: 65%;
+    height: auto;
+    top: -80%;
+    margin-left: 14%;   
+    position: absolute;
+    z-index: 99;
+
+}
+
+/* HEADER CONTAINER W/ VIDEO AND ARROW */
+
+.header-box {
+    position: relative; /* Container acts as anchor */
+    z-index: 100;
+    margin: 5%;
+}
+
+/* ARROW SAVED IN CASE */
+
+.floating-arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -50%;
+    margin: 0 auto;
+}
+
+#arrow1 {
+    position: relative;
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 10rem;
+    z-index: 101;
+}
+
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-160%); }
+}
+  
+.bounce {
+    animation: 1s infinite alternate bounce;
+}
+
+
+/* BAND PHOTO */
+
+.band-photos {
+    margin-top: 8%;
+    max-width: 100%;
+}
+
+/* YOUTUBE EMBEDS */
+
+.music-videos {
+    margin-top: 10%;
+}
+
+.youtube-embeds {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.youtube-embeds iframe {
+    aspect-ratio: 1 / 0.75;
+    margin: 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: auto;
+    border-color: transparent;
+    
+}
+
+
+/* SOCIAL MEDIA LINKS */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10%;
+    margin: 2%;
+    width: 100%;
+    
+}
+
+.social-links div {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.icon-button2 {
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    /* background-color: #bb2727;  Button background color */
+    background-size: 100%;
+    color: #bb2727; /* Text and icon color */
+    text-decoration: none; /* Removes default underline from links */
+    /* border-radius: 10rem; /* Adds rounded corners */
+    font-weight: bold; /* Makes text bold */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    cursor: pointer; /* Ensures it looks clickable */
+    max-width: 100%;
+    /* border-style: groove;*/
+    font-size: 8rem;
+}
+
+.icon-button2:hover {
+    background-color: #000000; /* Darker background on hover */
+}
+
+
+
+/* PHOTOS PAGE */
+
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.photo {
+    width: 80%;
+    margin: 10%; 
+}
+
+
+
+/* PRESS PAGE */
+
+.press-links {
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.press-button {
+    font-size: 5rem;
+    margin: 15%;
+    font-family: "Special Elite", system-ui;
+    color: #bb2727;
+  
+}
+
+/* CONTACT PAGE */
+
+.contact-info {
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-button {
+    font-size: 5rem;
+    margin: 15%;
+    font-family: "Special Elite", system-ui;
+    color: #bb2727;
+  
+}
+
+/* SHOWS PAGE */
+
+.upcoming-shows {
+    margin-top: 10%;
+    margin: 5%;
+}
+
+.show-posters {
+   margin-top: 5%;
+   
+}
+
+.poster {
+    margin-bottom: 10%;
+}
+

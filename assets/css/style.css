@@ -21,6 +21,13 @@ body {
     
     background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif, serif; /* A font stack */
+
+    overflow-x: hidden;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -38,17 +45,38 @@ header {
 }
 
 
-html {
-    scroll-behavior: smooth;
-}
 
 .name-header {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
-    
+     
 }
+
+
+ @keyframes temp-transparent {
+    0% {
+        opacity: 0; /* Start fully opaque */
+    }
+    20% {
+        opacity: 0; /* Become transparent by 20% of the duration (0.4s into a 2s animation) */
+    }
+    80% {
+        opacity: 0.8; /* Remain transparent until 80% of the duration (1.6s) */
+    }
+    100% {
+        opacity: 1; /* Return to fully opaque by the end of the animation (2s) */
+    }
+    }
+
+.header-box {
+    animation-name: temp-transparent;
+    animation-duration: 1s; /* Total time for one animation cycle */
+    animation-iteration-count: 1; /* Runs once (or set to 'infinite' to repeat) */
+    animation-fill-mode: forwards; /* Ensures the element stays in its final state (opaque in this case) */
+}
+
+
 
 .portals {
     display: flex;
@@ -59,14 +87,13 @@ html {
     width: 100%;
     align-content: space-between;
     margin-bottom: 10%;
+    
 }
 
 .portals div {
     
     width: 46%;
     margin: 2%;
-    
-    
 
 }
 
@@ -80,21 +107,15 @@ html {
     color: white; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
     font-weight: bold; /* Makes text bold */
-    font-size: 5rem;
+    font-size: 200%;
     transition: background-color 0.3s; /* Smooth hover effect */
     cursor: pointer; /* Ensures it looks clickable */
-    border-style: groove;
-    width: 100%;
+    border-style: inset;
+    width: 100%; 
     padding: 5%;
-    
-    
-    
 }
 
 
-.empty-space {
-    height: 10rem;
-}
 
 
 
@@ -150,10 +171,37 @@ html {
 
 /* HEADER CONTAINER W/ VIDEO AND ARROW */
 
+.photo-cred {
+    position: absolute;
+    z-index: 100;
+    margin-top: -8.5%;
+    margin-left: 53%;
+}
+
+.photo-cred header {
+    font-size: 0.8rem;
+}
+
 .header-box {
     position: relative; /* Container acts as anchor */
     z-index: 100;
     margin: 5%;
+}
+
+.header-box2 {
+    position: relative; /* Container acts as anchor */
+    z-index: 100;
+    margin: 5%;
+    display:none;
+    
+}
+
+.header-box3 {
+    position: relative; /* Container acts as anchor */
+    z-index: 100;
+    margin: 5%;
+    display: none;
+    
 }
 
 /* ARROW SAVED IN CASE */
@@ -164,19 +212,20 @@ html {
     justify-content: center;
     margin-top: -50%;
     margin: 0 auto;
+    
 }
 
 #arrow1 {
     position: relative;
     color: #ffffff;
     opacity: 0.5;
-    font-size: 10rem;
+    font-size: 400%;
     z-index: 101;
 }
 
   @keyframes bounce {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-160%); }
+    100% { transform: translateY(-300%); }
 }
   
 .bounce {
@@ -184,17 +233,29 @@ html {
 }
 
 
+
+
 /* BAND PHOTO */
 
 .band-photos {
     margin-top: 8%;
+    margin-bottom: 20%;
     max-width: 100%;
 }
 
 /* YOUTUBE EMBEDS */
 
-.music-videos {
+
+.all-videos {
     margin-top: 10%;
+}
+
+.music-videos header {
+    font-size: 130%;
+}
+
+.live-videos header {
+    font-size: 130%;
 }
 
 .youtube-embeds {
@@ -223,7 +284,7 @@ html {
     justify-content: center;
     flex-direction: row;
     margin-top: 10%;
-    margin: 2%;
+    margin: 0%;
     width: 100%;
     
 }
@@ -248,7 +309,8 @@ html {
     cursor: pointer; /* Ensures it looks clickable */
     max-width: 100%;
     /* border-style: groove;*/
-    font-size: 8rem;
+    font-size: 300%;
+    margin-bottom: 50%;
 }
 
 .icon-button2:hover {
@@ -285,8 +347,8 @@ html {
 }
 
 .press-button {
-    font-size: 5rem;
-    margin: 15%;
+    font-size: 200%;
+    margin: 13%;
     font-family: "Special Elite", system-ui;
     color: #bb2727;
   
@@ -302,8 +364,8 @@ html {
 }
 
 .contact-button {
-    font-size: 5rem;
-    margin: 15%;
+    font-size: 200%;
+    margin: 13%;
     font-family: "Special Elite", system-ui;
     color: #bb2727;
   
@@ -314,7 +376,9 @@ html {
 .upcoming-shows {
     margin-top: 10%;
     margin: 5%;
+    margin-bottom: 5%;
 }
+
 
 .show-posters {
    margin-top: 5%;
@@ -325,3 +389,301 @@ html {
     margin-bottom: 10%;
 }
 
+.past-shows {
+    display:flex;
+    flex-direction: column;
+}
+
+.past-shows header hr {
+    margin: 5%;
+}
+
+
+/* DESKTOP VERSION */
+
+
+@media screen and (min-width: 1024px) {
+
+ 
+
+    .name-header {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 19.5%;
+        margin-top: -1%;
+        
+    }
+
+    .desktop-header-box {
+        display:flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+     @keyframes temp-transparent {
+    0% {
+        opacity: 0; /* Start fully opaque */
+    }
+    20% {
+        opacity: 0; /* Become transparent by 20% of the duration (0.4s into a 2s animation) */
+    }
+    80% {
+        opacity: 0.8; /* Remain transparent until 80% of the duration (1.6s) */
+    }
+    100% {
+        opacity: 1; /* Return to fully opaque by the end of the animation (2s) */
+    }
+    }
+
+    .header-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 20%;
+        animation-name: temp-transparent;
+        animation-duration: 1s; /* Total time for one animation cycle */
+        animation-iteration-count: 1; /* Runs once (or set to 'infinite' to repeat) */
+        animation-fill-mode: forwards; /* Ensures the element stays in its final state (opaque in this case) */
+    }
+
+    .header-box video {
+        margin-top: -15%;
+        width: 20%;
+    }
+
+    .header-box2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 20%;
+        animation-name: temp-transparent;
+        animation-duration: 3.5s; /* Total time for one animation cycle */
+        animation-iteration-count: 1; /* Runs once (or set to 'infinite' to repeat) */
+        animation-fill-mode: forwards; /* Ensures the element stays in its final state (opaque in this case) */
+    }
+
+    .header-box2 video {
+        
+        margin-top: -15%;
+        width: 20%;
+    }
+
+    .header-box3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 20%;
+        animation-name: temp-transparent;
+        animation-duration: 8s; /* Total time for one animation cycle */
+        animation-iteration-count: 1; /* Runs once (or set to 'infinite' to repeat) */
+        animation-fill-mode: forwards; /* Ensures the element stays in its final state (opaque in this case) */
+    }
+
+    .header-box3 video {
+        margin-top: -15%;
+        width: 20%;
+    }
+
+    .floating-arrow {
+    position: relative;
+    display: none;
+    justify-content: center;
+    margin-top: -50%;
+    margin: 0 auto;
+    
+    }
+    
+   
+
+
+    .portals {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-direction: wrap;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    
+    .portals div {
+        width: 15%;
+        margin: 0%;
+        
+    }
+
+    .portal-button {
+        font-family: "Special Elite", system-ui;
+        display: inline-flex; /* Allows icon and text to align nicely */
+        align-items: center; /* Vertically centers the items */
+        justify-content: center; /* Centers items horizontally */
+        background-color: #bb2727; /* Button background color */
+        background-size: 100%;
+        color: white; /* Text and icon color */
+        text-decoration: none; /* Removes default underline from links */
+        font-weight: bold; /* Makes text bold */
+        font-size: 240%;
+        transition: background-color 0.3s; /* Smooth hover effect */
+        cursor: pointer; /* Ensures it looks clickable */
+        border-style: inset;
+        width: 100%; 
+        height: 100%
+        
+    }
+
+
+     .band-photos {
+        margin: 5%;
+        margin-bottom: 8%;
+        
+    }
+
+    .photo-cred {
+        position: absolute;
+        z-index: 100;
+        margin-top: -8%;
+        margin-left: 22%;
+        width: 100%;
+    }
+
+   
+    .photo-cred header {
+        font-size: 1.5rem;
+    }
+
+    .all-videos {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+
+    .music-videos header {
+        font-size: 300%;
+    }
+
+    .live-videos header {
+        font-size: 300%;
+    }
+   
+    .youtube-embeds {
+        margin: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        
+    }
+
+    .youtube-embeds iframe {
+        aspect-ratio: 1 / 0.75;
+        margin: 0%;
+        margin-bottom: 4%;
+        width: 30%;
+        height: auto;
+        border-color: transparent;
+    
+    }
+
+
+     .social-links {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 10%;
+        margin: 0%;
+        width: 100%;
+    }
+
+
+   .icon-button2 {
+        display: inline-flex; /* Allows icon and text to align nicely */
+        align-items: center; /* Vertically centers the items */
+        justify-content: center; /* Centers items horizontally */
+        /* background-color: #bb2727;  Button background color */
+        background-size: 100%;
+        color: #bb2727; /* Text and icon color */
+        text-decoration: none; /* Removes default underline from links */
+        /* border-radius: 10rem; /* Adds rounded corners */
+        font-weight: bold; /* Makes text bold */
+        transition: background-color 0.3s; /* Smooth hover effect */
+        cursor: pointer; /* Ensures it looks clickable */
+        max-width: 100%;
+        /* border-style: groove;*/
+        font-size: 500%;
+        margin-bottom: 50%;
+        margin: 5%;
+    }
+
+/* PHOTOS PAGE */
+
+    .photos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 5%;
+    
+    }
+
+    .photo {
+        width: 20%;
+        margin: 2%;
+        
+    }
+
+/* SHOWS PAGE */
+
+    .show-posters {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .show-posters div {
+        width: 40%
+    }
+    
+    /* PRESS PAGE */
+
+    .press-links {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+    }
+
+    .press-button {
+        font-size: 250%;
+        margin: 5%;
+        font-family: "Special Elite", system-ui;
+        color: #bb2727;
+  
+    }
+
+    /* CONTACT PAGE */
+
+    .contact-info {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-button {
+        font-size: 250%;
+        margin: 5%;
+        font-family: "Special Elite", system-ui;
+        color: #bb2727;
+  
+    }
+
+}

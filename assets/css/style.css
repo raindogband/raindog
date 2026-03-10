@@ -23,6 +23,8 @@ body {
     font-family: Arial, Helvetica, sans-serif, serif; /* A font stack */
 
     overflow-x: hidden;
+
+    overflow-anchor: none;
 }
 
 

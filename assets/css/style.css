@@ -253,11 +253,11 @@ header {
 }
 
 .music-videos header {
-    font-size: 130%;
+    font-size: 160%;
 }
 
 .live-videos header {
-    font-size: 130%;
+    font-size: 160%;
 }
 
 .youtube-embeds {
@@ -400,6 +400,35 @@ header {
     margin: 5%;
 }
 
+   .mainpage-link {
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15%;
+        margin-bottom: 5%;
+}
+
+    .mainpage-button {
+        font-family: "Special Elite", system-ui;
+        display: inline-flex; /* Allows icon and text to align nicely */
+        align-items: center; /* Vertically centers the items */
+        justify-content: center; /* Centers items horizontally */
+        background-color: #000000; /* Button background color */
+        background-size: 90%;
+        color: white; /* Text and icon color */
+        text-decoration: none; /* Removes default underline from links */
+        font-weight: bold; /* Makes text bold */
+        font-size: 120%;
+        transition: background-color 0.3s; /* Smooth hover effect */
+        cursor: pointer; /* Ensures it looks clickable */
+        border-style: inset;
+        width: fit-content; 
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3%;
+}
+
+
 
 /* DESKTOP VERSION */
 
@@ -437,6 +466,7 @@ header {
     100% {
         opacity: 1; /* Return to fully opaque by the end of the animation (2s) */
     }
+
     }
 
     .header-box {
@@ -561,11 +591,11 @@ header {
 
 
     .music-videos header {
-        font-size: 300%;
+        font-size: 350%;
     }
 
     .live-videos header {
-        font-size: 300%;
+        font-size: 350%;
     }
    
     .youtube-embeds {
@@ -687,5 +717,35 @@ header {
         color: #bb2727;
   
     }
+
+    .mainpage-link {
+        display: flex;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+}
+
+    .mainpage-button {
+        font-family: "Special Elite", system-ui;
+        display: inline-flex; /* Allows icon and text to align nicely */
+        align-items: center; /* Vertically centers the items */
+        justify-content: center; /* Centers items horizontally */
+        background-color: #000000; /* Button background color */
+        background-size: 100%;
+        color: white; /* Text and icon color */
+        text-decoration: none; /* Removes default underline from links */
+        font-weight: bold; /* Makes text bold */
+        font-size: 150%;
+        transition: background-color 0.3s; /* Smooth hover effect */
+        cursor: pointer; /* Ensures it looks clickable */
+        border-style: inset;
+        width: fit-content; 
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3%;
+}
+
+
 
 }

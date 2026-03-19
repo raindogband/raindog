@@ -104,7 +104,9 @@ header {
     display: inline-flex; /* Allows icon and text to align nicely */
     align-items: center; /* Vertically centers the items */
     justify-content: center; /* Centers items horizontally */
-    background-color: #2876d9; /* Button background color */
+    background-color: #1a0e6b;
+
+    /* background-color: #ce2d6f; /* Button background color */
     background-size: 100%;
     color: white; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
@@ -115,7 +117,19 @@ header {
     border-style: inset;
     width: 100%; 
     padding: 5%;
-    border-radius: 10%;
+    /* box-shadow: 0 0 10px #ea7fb0, 0 0 20px #ea7fb0, 0 0 30px #ea7fb0; */
+    text-shadow: 0 0 5% #fff, 0 0 2% #fff, 0 0 2% #fff;
+    /* border-radius: 10%; */
+    box-shadow: 0 0 10px #502eea, 0 0 20px #502eea, 0 0 30px #502eea;
+    animation: glowing 2s infinite alternate;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 0.5rem #ff4498; opacity: 75%;}
+    25% { box-shadow: 0 0 0.75rem #ff4498}
+    50% { box-shadow: 0 0 1rem #ff4498; }
+    75% { box-shadow: 0 0 1.1rem #ff4498;}
+    100% { box-shadow: 0 0 1.25rem #ff4498; }
 }
 
 

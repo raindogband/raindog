@@ -80,6 +80,16 @@ header {
 
 
 
+.loader {
+    position: relative;
+    margin-top: -80%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
 .portals {
     display: flex;
     position: relative;

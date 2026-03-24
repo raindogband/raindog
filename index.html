@@ -29,6 +29,11 @@
 
 <!-- VIDEO HEADER -->
 
+
+<div class="loader" id="loader">
+    <img src="images/Raindog - Loading Anim.gif">
+</div>
+
 <div class = "desktop-alternate">
 
     <div class="name-header">
@@ -289,9 +294,18 @@ const startVideo = async () => {
     console.log(err, 'video play error');
     // do stuff in case your video is unavailable to play/autoplay
   }
-}
+};
 
-setTimeout(startVideo, 5000)
+setTimeout(startVideo, 5000);
+
+
+
+
+window.addEventListener("load", function() {
+    var loader = document.getElementById("loader");
+    loader.style.display = "none";
+});
+
 
 </script>
 

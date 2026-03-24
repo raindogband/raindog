@@ -104,7 +104,7 @@ header {
     display: inline-flex; /* Allows icon and text to align nicely */
     align-items: center; /* Vertically centers the items */
     justify-content: center; /* Centers items horizontally */
-    background-color: #1a0e6b;
+    background-color: #9e3b99;
 
     /* background-color: #ce2d6f; /* Button background color */
     background-size: 100%;
@@ -117,19 +117,19 @@ header {
     border-style: inset;
     width: 100%; 
     padding: 5%;
-    /* box-shadow: 0 0 10px #ea7fb0, 0 0 20px #ea7fb0, 0 0 30px #ea7fb0; */
-    text-shadow: 0 0 5% #fff, 0 0 2% #fff, 0 0 2% #fff;
-    /* border-radius: 10%; */
-    box-shadow: 0 0 10px #502eea, 0 0 20px #502eea, 0 0 30px #502eea;
-    animation: glowing 2s infinite alternate;
+
+    animation: pulse-glow 1.5s infinite alternate;
+
+    
 }
 
-@keyframes glowing {
-    0% { box-shadow: 0 0 0.5rem #ff4498; opacity: 75%;}
-    25% { box-shadow: 0 0 0.75rem #ff4498}
-    50% { box-shadow: 0 0 1rem #ff4498; }
-    75% { box-shadow: 0 0 1.1rem #ff4498;}
-    100% { box-shadow: 0 0 1.25rem #ff4498; }
+@keyframes pulse-glow {
+  from {
+    box-shadow: 0 0 5px #ae21ff, 0 0 10px #ae21ff;
+  }
+  to {
+    box-shadow: 0 0 20px #ae21ff, 0 0 40px #ae21ff, 0 0 60px #ae21ff;
+  }
 }
 
 
@@ -318,7 +318,7 @@ header {
     justify-content: center; /* Centers items horizontally */
     /* background-color: #bb2727;  Button background color */
     background-size: 100%;
-    color: #2876d9; /* Text and icon color */
+    color: #873b9e; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
     /* border-radius: 10rem; /* Adds rounded corners */
     font-weight: bold; /* Makes text bold */
@@ -552,11 +552,13 @@ header {
         width: 100%;
         justify-content: center;
         
+        
     }
     
     .portals div {
         width: 15%;
         margin: 0%;
+        
         
     }
 
@@ -655,7 +657,7 @@ header {
         justify-content: center; /* Centers items horizontally */
         /* background-color: #bb2727;  Button background color */
         background-size: 100%;
-        color: #335ed4; /* Text and icon color */
+        color: #410dd1; /* Text and icon color */
         text-decoration: none; /* Removes default underline from links */
         /* border-radius: 10rem; /* Adds rounded corners */
         font-weight: bold; /* Makes text bold */

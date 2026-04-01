@@ -44,6 +44,8 @@ header {
   text-align: center;
   margin-top: 5%;
   
+  
+  
 }
 
 
@@ -52,6 +54,8 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    
+    
      
 }
 
@@ -84,11 +88,25 @@ header {
     position: relative;
     top: 0;
     left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2000;
+    
 }
+
+.loader img {
+    width: 200%;
+    margin-top: -12%;
+    margin-left: 2%;
+    
+     
+}
+
+
+
+
 
 .portals {
     display: flex;
@@ -99,6 +117,7 @@ header {
     width: 100%;
     align-content: space-between;
     margin-bottom: 10%;
+   
     
 }
 
@@ -314,11 +333,13 @@ header {
     margin: 0%;
     width: 100%;
     
+    
 }
 
 .social-links div {
     display: flex;
     flex-direction: row;
+    
    
 }
 
@@ -328,16 +349,18 @@ header {
     justify-content: center; /* Centers items horizontally */
     /* background-color: #bb2727;  Button background color */
     background-size: 100%;
-    color: #873b9e; /* Text and icon color */
+    color: #9a3fb6; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
     /* border-radius: 10rem; /* Adds rounded corners */
     font-weight: bold; /* Makes text bold */
     transition: background-color 0.3s; /* Smooth hover effect */
+    background-color: rgba(255, 255, 255, 0) ;
     cursor: pointer; /* Ensures it looks clickable */
     max-width: 100%;
     /* border-style: groove;*/
     font-size: 300%;
     margin-bottom: 50%;
+   
 }
 
 .icon-button2:hover {
@@ -461,6 +484,9 @@ header {
 @media screen and (min-width: 1024px) {
 
  
+    .loader {
+        display: none;
+    }
 
     .name-header {
         width: 60%;
@@ -667,7 +693,7 @@ header {
         justify-content: center; /* Centers items horizontally */
         /* background-color: #bb2727;  Button background color */
         background-size: 100%;
-        color: #410dd1; /* Text and icon color */
+        color: #ae21ff; /* Text and icon color */
         text-decoration: none; /* Removes default underline from links */
         /* border-radius: 10rem; /* Adds rounded corners */
         font-weight: bold; /* Makes text bold */

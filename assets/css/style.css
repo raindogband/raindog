@@ -48,7 +48,9 @@ header {
   
 }
 
-
+.spotify-link {
+    display: none;
+}
 
 .name-header {
     display: flex;
@@ -577,9 +579,6 @@ header {
     
     }
     
-   
-
-
     .portals {
         display: flex;
         position: relative;

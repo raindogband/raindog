@@ -119,6 +119,7 @@ header {
     width: 100%;
     align-content: space-between;
     margin-bottom: 10%;
+    margin-top: 10%;
    
     
 }
@@ -148,11 +149,13 @@ header {
     border-style: inset;
     width: 100%; 
     padding: 5%;
-
-    animation: pulse-glow 1.5s infinite alternate;
+    box-shadow: 0 0 20px #ae21ff, 0 0 40px #ae21ff, 0 0 60px #ae21ff;
+    
 
     
 }
+
+/* Old Pulse Animation - Unused */
 
 @keyframes pulse-glow {
   from {
@@ -602,7 +605,7 @@ header {
         display: inline-flex; /* Allows icon and text to align nicely */
         align-items: center; /* Vertically centers the items */
         justify-content: center; /* Centers items horizontally */
-        background-color: #410dd1; /* Button background color */
+        background-color: #ae21ff; /* Button background color */
         background-size: 100%;
         color: white; /* Text and icon color */
         text-decoration: none; /* Removes default underline from links */

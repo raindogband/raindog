@@ -394,7 +394,7 @@ header {
 /* PRESS PAGE */
 
 .press-links {
-    margin-top: 13%;
+    margin-top: 11%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,14 +405,14 @@ header {
     font-size: 200%;
     margin: 13%;
     font-family: "Special Elite", system-ui;
-    color: #bb2727;
+    color: #9e3b99;
   
 }
 
 /* CONTACT PAGE */
 
 .contact-info {
-    margin-top: 13%;
+    margin-top: 11%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -422,7 +422,7 @@ header {
     font-size: 200%;
     margin: 13%;
     font-family: "Special Elite", system-ui;
-    color: #bb2727;
+    color: #9e3b99;
   
 }
 
@@ -479,6 +479,8 @@ header {
         margin-left: auto;
         margin-right: auto;
         padding: 3%;
+        border-radius: 25%;
+        border-color: #9a3fb6;
 }
 
 
@@ -753,7 +755,7 @@ header {
         font-size: 250%;
         margin: 5%;
         font-family: "Special Elite", system-ui;
-        color: #bb2727;
+        color: #9e3b99;
   
     }
 
@@ -770,7 +772,7 @@ header {
         font-size: 250%;
         margin: 5%;
         font-family: "Special Elite", system-ui;
-        color: #bb2727;
+        color: #9e3b99;
   
     }
 

@@ -159,7 +159,7 @@ header {
 
 @keyframes pulse-glow {
   from {
-    box-shadow: 0 0 5px #ae21ff, 0 0 10px #ae21ff;
+    box-shadow: 0 0 5px #54107c, 0 0 10px #54107c;
   }
   to {
     box-shadow: 0 0 20px #ae21ff, 0 0 40px #ae21ff, 0 0 60px #ae21ff;

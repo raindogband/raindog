@@ -503,6 +503,16 @@ header {
         
     }
 
+
+    .desktop-border {
+        border: 5px dotted #9425af;
+        margin: 3%;
+        border-radius: 8px;
+        
+
+    }
+
+
     .desktop-header-box {
         display:flex;
         justify-content: center;

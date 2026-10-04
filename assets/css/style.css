@@ -85,16 +85,32 @@ header {
 }
 
 
+html.loading,
+body.loading {
+    overflow: hidden;
+}
 
-.loader {
-    position: relative;
+
+#main-content {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+#main-content.loaded {
+    opacity: 1;
+}
+
+#loader {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2000;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
     
 }
 
@@ -104,6 +120,11 @@ header {
     margin-left: 2%;
     
      
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 

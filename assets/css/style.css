@@ -114,6 +114,14 @@ body.loading {
     
 }
 
+
+
+.loader {
+    margin-bottom: 20%; 
+    margin-top: 13%;
+}
+
+
 .loader img {
     width: 200%;
     margin-top: -12%;
@@ -510,9 +518,26 @@ body.loading {
 @media screen and (min-width: 1024px) {
 
  
+
     .loader {
-        display: none;
+        
     }
+
+
+    #loader {
+        position: absolute;
+        height: 100vh;
+        display: flex;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    
+    }
+
+    .loader img {
+       height: 100vh;
+       width: auto;
+    }
+
 
     .name-header {
         width: 60%;
